@@ -1,0 +1,325 @@
+body {
+    background-color: #121212;
+    height: 300vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    width: -100%;
+    padding-top: 200px;
+    padding-left: -200px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.sharky {
+    height: 60px;
+     left: 0px;
+     top: 50px;
+     margin: 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-weight: 900;
+    font-size: 50px;
+    background: linear-gradient(to top, rgb(164, 164, 164), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-weight: 900;
+    font-size: 50px;
+    background: linear-gradient(to top, rgb(115, 232, 255), rgb(0, 238, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.desc {
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-size: 15px;
+    background: linear-gradient(to top, rgb(0, 153, 153), rgb(177, 177, 177));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 50px;
+}
+
+hr {
+    border: 1px solid rgb(0, 40, 65);
+    margin: 10px 50px;
+    width: 80%;
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+}
+
+.image-container img {
+    width: 900px; /* Adjust as needed */
+    height: auto;
+    border: 1px solid #008B8B; /* Darker cyan outline */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    animation: glow 1.5s infinite alternate ease-in-out; /* Glow animation */
+}
+
+/* Keyframes for smooth glowing effect */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px 2px cyan;
+    }
+    100% {
+        box-shadow: 0 0 20px 10px cyan;
+    }
+}
+
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    font-family: "Montserrat", serif;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.info-text {
+    max-width: 60%;
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+.info-text h2 {
+    font-size: 36px;
+    font-family: "Montserrat", serif;
+    font-weight: 900;
+}
+
+.info-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.info-box {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-box p {
+    color: #ffffff; /* Blue text */
+    margin-bottom: 10px;
+}
+
+
+.download-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button {
+    background: linear-gradient(to bottom, rgb(0, 153, 153), rgb(177, 177, 177));
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Montserrat", serif;
+}
+
+.download-button:hover {
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgb(0, 204, 204)); /* Glowing background */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.8); /* Glowing effect */
+}
+
+.download-buttond {
+    background: linear-gradient(to bottom, rgb(0, 153, 153), rgb(177, 177, 177));
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 12px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Montserrat", serif;
+    margin-bottom: 30px;
+}
+
+.download-buttond:hover {
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgb(0, 204, 204)); /* Glowing background */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.8); /* Glowing effect */
+}
+
+.discord{
+    background: linear-gradient(to bottom, rgb(0, 153, 153), rgb(177, 177, 177));
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Montserrat", serif;
+    margin-bottom: 30px;
+    align-items: center;
+    margin-right: 25px;
+}
+
+i {
+    font-size: 20px;
+}
+
+.discord:hover {
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgb(0, 204, 204)); /* Glowing background */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.8); /* Glowing effect */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background: linear-gradient(to top, rgb(0, 30, 52), rgb(0, 25, 41));
+    color: white;
+    font-family: "Montserrat", serif;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+footer .footer-text {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(177, 177, 177);
+}
+
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 36px;
+    }
+
+    .desc {
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .animated-img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 30px;
+    }
+
+    .desc {
+        font-size: 12px;
+        margin: 15px;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+
+    .animated-img {
+        height: 250px;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 153, 153, 0.8); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgb(0, 204, 204)); /* Glowing background */
+    box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.8); /* Glowing effect */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0); /* Background color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* For Firefox */
+scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px;
+}
+
+scrollbar-thumb {
+    background-color: rgba(0, 153, 153, 0.8);
+    border-radius: 10px;
+}
+
+scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+
